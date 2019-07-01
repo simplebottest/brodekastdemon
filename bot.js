@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const prefix = "$b";
-const adminprefix = "$b";
 const devs = ["518113780723351592"]
 // ========================================== [ CONSTRUCTERS ] =========================================
 
@@ -169,7 +168,7 @@ client.on("message", async message => {
     }
 });
 
-
+const adminprefix = "$b";
 client.on('message', message => {
 
     var argresult = message.content.split(` `).slice(1).join(' ');
